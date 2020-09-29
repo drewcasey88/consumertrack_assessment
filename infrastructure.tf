@@ -2,6 +2,11 @@ provider "aws" {
     region = "${var.region}"
 }
 
+resource "aws_key_pair" "deploy" {
+  key_name   = "terraform"
+  public_key = "${var.public_key}"
+}
+
 resource "aws_vpc" "sbx" {
   cidr_block = "10.0.0.0/16"
   enable_dns_hostnames = true
@@ -100,7 +105,6 @@ resource "aws_security_group" "allow_http" {
     Name = "HTTP-SG"
   }
 }
-
 resource "aws_launch_configuration" "web" {
   name_prefix = "web-"
 
