@@ -11,10 +11,13 @@ It is also assumed that you have Terraform installed.
 See installation and config here: https://learn.hashicorp.com/tutorials/terraform/install-cli
 
 # Usage
-Simply perform: 
+
+From the root directory, simply perform: 
 ```terraform init```
 ```terraform plan```
 ```terraform apply```
 type ```yes``` when prompted
 
 The elb dns will output like so:
+```ELB_IP = web-elb-1476806189.us-east-1.elb.amazonaws.com```
+Copy and paste the address into your browser and refresh to see the different instance information as each is hit from the elb.
