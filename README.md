@@ -15,7 +15,7 @@ See installation and config here: https://learn.hashicorp.com/tutorials/terrafor
 From the root directory, simply perform: 
 ```terraform init```
 ```terraform plan```
-```terraform apply -var="public_key=<your_public_key_here```
+```terraform apply -var="public_key=<your_public_key_here```"
 type ```yes``` when prompted
 
 The elb dns will output like so:
