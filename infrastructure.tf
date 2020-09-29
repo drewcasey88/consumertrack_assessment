@@ -103,7 +103,7 @@ resource "aws_security_group" "allow_http" {
 
 resource "aws_key_pair" "deploy" {
   key_name   = "terraform"
-  public_key = "ssh-rsa "
+  public_key = "ssh-rsa"
 }
 
 resource "aws_launch_configuration" "web" {
