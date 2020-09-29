@@ -4,10 +4,11 @@ This is a terraform plan which will create a new vpc and necessary infrastructur
 
 # prerequisites
 An ssh key pair. Directions on generating one can be found here: https://www.ssh.com/ssh/keygen/
+
 It is assumed that you have aws cli installed and configured with admin priviliges. (~/.aws/credentials) 
 See installation and config here: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
 
-It is also assumed that you have Terraform installed. 
+It is also assumes that you have Terraform installed. 
 See installation and config here: https://learn.hashicorp.com/tutorials/terraform/install-cli
 
 # Usage
