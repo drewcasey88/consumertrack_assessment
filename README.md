@@ -1,4 +1,4 @@
-# ConsumerTrack
+# Infrastructure
 
 This is a terraform plan which will create a new vpc and necessary infrastructure to host an autoscaling group with a minimum of 3 instances behind an elb. When the elb dns is reached, a few details of the responding server will appear via NGINX. (All AWS resources will be created in US-EAST-1)
 
